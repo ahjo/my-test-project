@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="styles_ie.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p class="h3"><img src="../images/h_quick.gif" width="105" height="14"> </p>
+<p class="h3"><a name="steps"></a>Installations in easy steps</p>
+<p>&nbsp;&nbsp;&nbsp;Welcome to the quickstart section of the help here we will 
+  show how to install and use WEBinsta ML/NL manager system to control mail list and 
+  newsletters </p>
+<table width="100%" border="0" cellspacing="0" cellpadding="5">
+  <tr> 
+    <td><p>&nbsp;</p>
+      <p class="h3">Installation (the easy way) </p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To install the script unzip the script 
+        in your root directory. (IMPORTANT: if you already have an index.php remane index.php to for example mail.php) <br>
+        Fill in your browser the  path. In this xample http://www.yourserver.com/mail.php.<br>
+        Now you see an example page (look in the source how we did it) and click on administration.<br>
+        An installation wizzard will guide you through some settings.<br>
+        IMPORTANT: to set the first settings right.<br>
+        EXAMPLE : website will be http://www.yourserver.com/<br>
+  Relative path : maillist/<br>
+  Relative String : mail.php?page=mail&amp;<br>  
+        <br>
+        Once installation is completed see the <em><strong>index.php</strong></em> provided on how to integrate the script . Mainly it is simply taking the 
+            form code from the main page and pasting that code into your page . Other 
+            settings and control can be accessed admin.php in the script directory 
+      . </p>
+      <p>Please change the permissions on globals.php to world read and write 
+      .. </p>
+      <ul><li><strong>globals.php</strong> ( main file in which settings are stored 
+          )<br>
+          (and for the export funtion to work also the<strong> temp dir</strong> must have write's to write to !!) <br>
+        </li>
+      </ul>
+      <p class="h3">Usage </p>
+      <p>.<br>
+        To put up a simple mail box paste the following code in you php file 
+        . <br>
+        <br><CODE>
+ &lt;?php<br>
+$mailbar=1;<br>
+$group=1;<br>
+include(&quot;maillist/mailbar.php&quot;);<br>
+?&gt;</CODE>      
+      <p>        where maillist is the dir of the script . There are four types of the 
+        mail registrations.( see index.php as an example) <br>
+        By $group= you fill out the group number ( if you make a new group it will be number 2 and so on) <br>
+        <br>
+      And put the following code in your main page      
+      <CODE><p>&lt;?php <br>
+        if(isset ($_GET['page'])) <br>
+        { <br>
+        if ($_GET['page'] == &quot;mail&quot;) <br>
+        { <br>
+        include(&quot;maillist/mailmain.php&quot;); <br>
+        } <br>
+        if ($_GET['page'] == &quot;about&quot;) <br>
+        { <br>
+        include(&quot;about.php&quot;); <br>
+        } <br>
+        }else { <br>
+        /* include( your messages &quot;); */ <br>
+        print(&quot;:Your un/subscribe messages here:&quot;); <br>
+        } <br>
+        ?&gt; </p></CODE>
+      <p>Where the sentence appear :Your subscribe messages here: <br>
+        your subscribe messages will appear </p>
+      <p>(I delete the sentence :Your subscribe messages here: so I don't see that line in my homepage)</p>
+      <p>Your main page will also be the relative string found in the admin<br>
+        FOR EXAMPLE: you want to use the mailbox on a file named subscribe.php then put the above boxes in the file subscribe.php<br>
+      and fill in the admin by Relative String :subscribe?page=mail&amp; </p>
+      <p>If you want to use a customized email with the name of the subscriber fill in the following in one of<br>
+      the textarea's in the sent mail <strong><FONT face=Arial size=2>{name} </FONT></strong>( for an email adress use <strong><FONT face=Arial size=2>{email}</FONT></strong> ) </p>
+      <p><span class="h3">IMPORT EMAIL ADRESSES</span><br>
+        - You can import from a csv file as followed<br>
+&quot;info@youradres.com&quot;,&quot;yourname&quot; </p>
+      </p>
+    </td>
+  </tr>
+</table>
+<p><a href="#"><img src="../images/top_of_page.gif" width="93" height="16" border="0"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="support.htm"><img src="../images/next.gif" width="47" height="16" border="0"></a><br>
+</p>
+</body>
+</html>

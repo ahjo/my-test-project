@@ -1,0 +1,315 @@
+BODY {
+	font-size : 12px;
+	font-family : Verdana, Arial, sans-serif;
+	color : #333333;
+	margin: 0px;
+	SCROLLBAR-HIGHLIGHT-COLOR: #eeeeee;
+	SCROLLBAR-SHADOW-COLOR: #999999;
+	COLOR: #000000;
+	SCROLLBAR-3DLIGHT-COLOR: #eeeeee;
+	SCROLLBAR-ARROW-COLOR: #999999;
+	SCROLLBAR-TRACK-COLOR: #ffffff;
+	FONT-STYLE: normal;
+	FONT-FAMILY: Verdana, Arial, sans-serif;
+	SCROLLBAR-DARKSHADOW-COLOR: #cccccc;
+	SCROLLBAR-BASE-COLOR: #cccccc;
+	background-color: #E6E4E4;
+}
+TD {
+	font-size : 11px;
+	font-family : Verdana, Arial, sans-serif;
+	color : #3D5066;
+}
+.h3 {
+	font-size : 13px;
+   	font-family : Verdana, Arial, sans-serif;
+   	color : #CC0000;
+}
+A			{
+	color: #EF9300;
+	text-decoration: underline;
+	font-weight:bold;
+	ont-size : 11px;
+}
+A:visited	{
+	color: #EF9300;
+	text-decoration: underline;
+}
+A:active		{
+	color: #EF9300;
+	text-decoration: underline;
+}
+A:hover		{
+	color: #CCCCCC;
+	text-decoration: underline;
+}
+A.normal {
+   	color : #005CB1;
+   	text-decoration: underline;
+}
+A.menulink {
+	font-size : 11px;
+	font-family : Verdana, Arial, sans-serif;
+	text-decoration : none;
+	color: #FFFFFF;
+	font-weight: normal;
+	background-image: url(../images/interface/button.gif);
+	height: 23px;
+	width: 88px;
+	line-height: 23px;
+}
+A.menulink:visited {
+   	color: #FFFFFF;
+	text-decoration: none;
+}
+A.menulink:active {
+   	color: #FF9900;
+	text-decoration: none;
+}
+A.menulink:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+	background-image: url(../images/interface/button_over.gif);
+	height: 23px;
+	width: 88px;
+	line-height: 23px;
+}
+.menulink2 {
+	font-size : 10px;
+	font-family : Verdana, Arial, sans-serif;
+	text-decoration : none;
+	color: #EF9300;
+	font-weight: bold;
+	cursor: hand;
+
+}
+A.menulink2 {
+   	font-size : 10px;
+   	font-family : Verdana, Arial, sans-serif;
+   	text-decoration : none;
+   	color: #EF9300;
+}
+A.menulink2:visited {
+   	color: #EF9300;
+	text-decoration: none;
+}
+A.menulink2:active {
+   	color: #EF9300;
+	text-decoration: none;
+}
+A.menulink2:hover {
+   	color: #CCCCCC;
+	text-decoration: none;
+}
+.title {
+   width : 137px;
+   left : 15px;
+   position : absolute;
+   z-index: 10;
+}
+.menupic{
+   width : 171px;
+   left : 0px;
+   position : absolute;
+   z-index: 10;
+}
+.submenu {
+   font-size : 11px;
+   width : 150px;
+   left : 20px;
+   position : absolute;
+   visibility : hidden;
+}
+.bg_body	{
+	background-image: url("../images/butterfly.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top right;
+	background-color: #ffffff;
+}.textbox {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background-color: #f7f7f7;
+	border: 1px solid #aaaaaa;
+}
+.graybutton {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background-color: eeeeee;
+	border: 1px solid aaaaaa;
+	clip:  rect(1px 1px 1px 1px);
+	font-weight: normal;
+	text-decoration: none;
+	color: #333333;
+
+
+}
+.orange {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FF9900;
+	text-decoration: none;
+}
+form {
+	margin: 0px;
+}
+#dhtmltooltip{
+position: absolute;
+font-size: 10px;
+width: 200px;
+border: 2px solid black;
+padding: 2px;
+background-color: lightyellow;
+visibility: hidden;
+z-index: 100;
+/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+}
+/*specify height of broken up content */
+.multiparts{
+height: 50px;
+}
+.f8 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+/* Styles for dhtml tabbed-pages */
+
+
+
+.pagetext {
+	visibility: hidden;
+	display: none;
+	top: 0;
+}
+
+
+.menudottedline {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: dashed;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+}
+
+.adminheader {
+	color : #ff6600;
+	font-size : 24px;
+	font-weight: normal;
+}
+.lbut {
+font-size: 12px;
+font-family: Arial;
+color: #000000;
+border: 1px solid #AAAAAA;
+background-color: #6093C9;
+height: 22px;
+}
+.iframe {
+	border: none;
+	clip:  rect(5px 5px 5px 5px);
+	margin: 0px;
+	padding: 0px;
+
+}
+
+FORM, BUTTON, SELECT, INPUT {
+	FONT-SIZE: 11px; COLOR: #000000;  FONT-FAMILY: geneva, verdana
+}
+.small {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+}
+.lform2 {
+font-size: 11px;
+font-family: Arial;
+color: #000000;
+border: 1px solid #87A6C0;
+background-color: #C0A187;
+width: 150px;
+height: 20px;
+}
+.menu {
+	background-color: #EAEDF0;
+	height: 20px;
+	width: 100%;
+	line-height: 20px;
+	text-indent: 10pt;
+}
+A.menu:link, A.menu:visited, A.menu:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+	background-color: #EAEDF0;
+	text-decoration: none;
+}
+A.menu:hover {
+	color: #FFFFFF;
+	background-color: #AAB2B0;
+	text-decoration: none;
+}
+
+.itemmenu {
+	background-color: #EAEDF0;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+}
+
+.headermenu {
+	background-color: #445E58;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #A8ADB4;
+	border-right-color: #A8ADB4;
+	border-bottom-color: #A8ADB4;
+	border-left-color: #A8ADB4;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #FE9800;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+	line-height: 20px;
+}
+.boxes {
+	border: 1px solid #CCCCCC;
+}
+.boxheader {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #CC0000;
+	text-indent: 5px;
+	line-height: 20px;
+}
+.codeboxes {
+	border: 1px dashed #CCCCCC;
+	background-color: #FFFFFF;
+}
+.style8 {font-size: 12px}
+.style9 {color: #333333}

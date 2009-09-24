@@ -1,0 +1,80 @@
+<?php if(!isset($_SESSION['admin'])){echo 'Hacking attempted'; return ;} ?>
+<?php
+                                $fp=fopen("globals.php","w");
+                                $out=sprintf("<?php \r\n\$main_dir = \"%s\";\r\n",$nmain_dir);
+                                fwrite($fp,$out,strlen($out));
+                                $out=sprintf("\$website = \"%s\";\r\n",$nwebsite);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$relative_string=\"%s\";\r\n",$nrelative_string);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$absolute_path=\"%s\";\r\n",$nabsolute_path);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$lang=\"%s\";\r\n",$nlang);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$email_name=\"%s\";\r\n",$nemail_name);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$email_email=\"%s\";\r\n",$nemail_email);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$email_thank_title=\"%s\";\r\n",$nemail_thank_title);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$email_thank_message=stripslashes(\"%s\");\r\n",addslashes($nemail_thank_message));
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$email_unsubscribe_message=stripslashes(\"%s\");\r\n",addslashes($nemail_unsubscribe_message));
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$email_verify_message=stripslashes(\"%s\");\r\n",addslashes($nemail_verify_message));
+                                fwrite($fp,$out,strlen($out));
+//                $out=sprintf("\$email_html=\"%s\";\r\n",$nemail_html);
+//                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$email_unsubscribe=\"%s\";\r\n",$nemail_unsubscribe);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$email_thank=\"%s\";\r\n",$nemail_thank);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$email_verify=\"%s\";\r\n",$nemail_verify);
+                                fwrite($fp,$out,strlen($out));
+                                $out=sprintf("\$email_images=\"%s\";\r\n",$nemail_images);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$user=\"%s\";\r\n",$nusername);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$pass=\"%s\";\r\n",$npassword);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$database=\"%s\";\r\n",$ndatabase);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$dbhostname=\"%s\";\r\n",$ndbhostname);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$dbusername=\"%s\";\r\n",$ndbusername);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$dbpassword=\"%s\";\r\n",$ndbpassword);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$dbname=\"%s\";\r\n",$ndbname);
+                                fwrite($fp,$out,strlen($out));
+                                $out=sprintf("\$dbtable=\"%s\";\r\n",$ndbtable);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$userfield=\"%s\";\r\n",$nuserfield);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$emailfield=\"%s\";\r\n",$nemailfield);
+                                fwrite($fp,$out,strlen($out));
+
+/*output the server selection */
+                $out=sprintf("\$mserver=\"%s\";\r\n",$mserver);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$sendmail_string=\"%s\";\r\n",$sendmail_string);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$smtp_string=\"%s\";\r\n",$smtp_string);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$smtp_auth=\"%s\";\r\n",$smtp_auth);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$smtp_username=\"%s\";\r\n",$smtp_username);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$smtp_password=\"%s\";\r\n",$smtp_password);
+                                fwrite($fp,$out,strlen($out));
+//add by moises www.hgmnetwork.com to add charset iso
+                $out=sprintf("\$charsettype=\"%s\";\r\n",$ncharsettype);
+                                fwrite($fp,$out,strlen($out));
+                $out=sprintf("\$priorityemail=\"%s\";\r\n",$npriorityemail);
+                                fwrite($fp,$out,strlen($out));
+
+                $out=sprintf("?>");
+                                fwrite($fp,$out,strlen($out));
+                                fclose($fp);
+                                require("globals.php");
+?>

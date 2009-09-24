@@ -1,0 +1,88 @@
+BODY,TD {
+   font-size : 13px; 
+   font-family : Arial, sans-serif; 
+   color : #3D5066; 
+}
+.h3 {
+	font-size : 15px; 
+   	font-family : Arial, sans-serif; 
+   	color : #005CB1; 
+}
+A			{
+	color: #005CB1;
+	text-decoration: underline;
+}
+A:visited	{
+	color: #005CB1;
+	text-decoration: underline;
+}
+A:active		{
+	color: #FFA000;
+	text-decoration: underline;
+}
+A:hover		{
+	color: #FF6E00;
+	text-decoration: underline;
+}
+A.normal {
+   color : #0072C2; 
+   text-decoration : none; 
+}
+A.menulink {
+   font-size : 12px;
+   font-family : Verdana, Arial, sans-serif;  
+   text-decoration : none;
+   color: #005CB1; 
+}
+A.menulink:visited {
+   	color: #005CB1;
+	text-decoration: none; 
+}
+A.menulink:active {
+   	color: #FFA000;
+	text-decoration: none; 
+}
+A.menulink:hover {
+   	color: #FF6E00;
+	text-decoration: none; 
+}
+A.menulink2 {
+   font-size : 11px;
+   font-family : Verdana, Arial, sans-serif; 
+   text-decoration : none;
+   color: #005CB1; 
+}
+A.menulink2:visited {
+   	color: #005CB1;
+	text-decoration: none; 
+}
+A.menulink2:active {
+   	color: #FFA000;
+	text-decoration: none; 
+}
+A.menulink2:hover {
+   	color: #FF6E00;
+	text-decoration: none; 
+}
+.title {
+   width : 137px;
+   left : 5px; 
+   position : absolute;
+   z-index: 10; 
+}
+.menupic{
+   width : 171px;  
+   left : 0px; 
+   position : absolute;
+   z-index: 10;
+}
+.submenu {
+   font-size : 11px; 
+   width : 150px; 
+   left : 10px; 
+   position : absolute; 
+   visibility : hidden;
+}
+.bg_body	{ 
+	background-color: #ffffff;
+}
